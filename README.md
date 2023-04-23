@@ -1,2 +1,2 @@
 # Gaming-Website
-This is a responsive Gaming Website I built using html, css &amp; JavaScript
+This is a replica of a responsive Gaming Website built using html, css &amp; JavaScript
