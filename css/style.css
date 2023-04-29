@@ -582,6 +582,7 @@ body {
 .social-list {
   display: flex;
   gap: 10px;
+  list-style-type: none;
 }
 .footer .social-link {
   width: 40px;
