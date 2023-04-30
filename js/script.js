@@ -33,16 +33,18 @@ const navClose = () => {
 addEventOnElements(navLinks, "click", navClose);
 
 /**
- * HEADER
+ * HEADER and BACK TOP BTN
  * headre will be active after scrolled down to 100px of screen
  */
 const header = document.querySelector("[data-header]");
-
+const backTopBtn = document.querySelector("[data-back-top-btn]")
 const activeEl = function () {
     if  (window.scrollY > 100) {
         header.classList.add("active");
+        backTopBtn.classList.add("active");
     } else {
         header.classList.remove("active");
+        backTopBtn.classList.remove("active");
     }
 }
 window.addEventListener("scroll", activeEl);

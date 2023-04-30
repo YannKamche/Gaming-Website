@@ -656,9 +656,25 @@ body {
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
-
-
-
+.back-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-image: var(--gradient-1);
+  display: grid;
+  place-items: center;
+  font-size: 2.1rem;
+  clip-path: var(--clip-path-8);
+  opacity: 0;
+  transition: var(--transition-1);
+  z-index: 4;
+}
+.back-top-btn.active {
+  opacity: 1;
+  transform: translateY(-20px);
+}
 
 
 /*-----------------------------------*\
