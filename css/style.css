@@ -261,7 +261,23 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
+[data-reveal] {
+  opacity: 0;
+  transition: var(--transition-2);
+}
+[data-reveal="left"] {
+  transform: translateX(-20px);
+}
+[data-reveal="right"] {
+  transform: translateX(20px);
+}
+[data-reveal="bottom"] {
+  transform: translateY(20px);
+}
+[data-reveal].reealed {
+  opacity: 1;
+  transform: translate(0);
+}
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -680,7 +696,9 @@ body {
 /*-----------------------------------*\
   #CUSTOM CURSOR
 \*-----------------------------------*/
-
+.cursor {
+  display: none;
+}
 
 
 
